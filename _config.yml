@@ -1,0 +1,64 @@
+# Site Info
+title: 대학원생으로 살아남기
+tagline: 'by Sanghyun'
+description: '대학원 생활의 모든 것'
+url: https://SangHyun014.github.io
+logo: '/public/logo.png'
+encoding: utf-8
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+highlighter: roug
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Ju Sanghyun
+  description: 자율주행을 공부하기 시작한 <br>대학원생의 일대기
+  gravatar: e0fec1e0fdc91596a7a2fc55f04b324b # md5 hash of your email address
+  contact:
+    #linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/SangHyun014
+    
+    # facebook:  <hide>
+    #twitter:   https://twitter.com/Li_Zhihao
+    #weibo:     http://weibo.com/41173780
+    #email:     tkdgus014@hanyang.ac.kr
+    #instagram :   https://instagram.com/yngie_daily
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/LiDAR.jpg
+  caption: LiDAR Sensor
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: #'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: #'your_short_name' # leave blank if you don't want disqus
+
