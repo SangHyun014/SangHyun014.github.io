@@ -34,7 +34,7 @@ tags: [Paper, NLP, Transformer, Attention]
 
 ## 4. Model Architecture
 
-![image-left](image.png) |![image-right](image-1.png)
+![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/864085ad-4cf8-40e2-9bd6-151db65f97cd) |![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/92f51cbe-aa2e-4b64-bf6d-a1729e6e12ef)
 --- |---|
 
 ### a. Encoder and Decoder Stacks
@@ -49,7 +49,7 @@ tags: [Paper, NLP, Transformer, Attention]
 
 ### b. Attention
 
-![Alt text](image-2.png)
+![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/5ca9ee8c-507c-4ed4-8739-06a3ca052ca4)
 
 ∵ MatMul : 3차원 이상에서의 벡터곱(내적과 동일)
 
@@ -63,7 +63,7 @@ Value(V) : 그 영향에 대한 가중치
     
     Attention Score 계산 수식
     
-    ![Alt text](image-3.png)
+    ![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/4a867dd7-85a0-4d35-bb64-bafb924270d2)
     
     dot-product attention은 더 빠르고 공간 효율적인 장점이 있어 사용하였다.
     
@@ -76,12 +76,12 @@ Value(V) : 그 영향에 대한 가중치
     1. 다른 Position에 Attention 하는 모델의 능력을 향상시킨다.
     2. 병렬로 인해 축소된 차원으로 단일 어텐션과 유사한 cost를 가진다.
     
-    ![Alt text](image-4.png)
+    ![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/eff98def-3b8b-4cdc-a142-d72ada5ef8b5)
     
 
 - Applications of Attention in our Model
     
-    ![Alt text](image-5.png)
+    ![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/e6c913c5-dd5e-4547-8382-981981f7986f)
     
     - “Encoder Self-Attention”
     input text 내에서의 문맥 정보를 파악한다.
@@ -100,7 +100,7 @@ Value(V) : 그 영향에 대한 가중치
 
 Transformer는 sequence to sequence model 이지만, attention에만 의존하고 있기 때문에 위치 정보를 추가해주어야 한다. 이 때, Positional Encoding 기법으로 각 단어의 상대적인 위치 정보를 포함한다.
 
-![Alt text](image-6.png)
+![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/cc02bd9a-2bbe-4285-bd8e-623fd39b29b2)
 
 다음과 같이 기존의 Embedding에서 Positional Encoding을 더해 time signal을 가진 embedding으로 만들어 주는 것이다.
 
@@ -109,7 +109,7 @@ Transformer는 sequence to sequence model 이지만, attention에만 의존하�
     2. 어떤 두 개의 time-step 사이의 거리는 서로 다른 길이로 문장 전체에 거쳐 일관성이 있어야한다. → 한 문장 내에서 동일한 거리는 없어야함.
     3. 긴 문장에서도 사용할 수 있도록 일반화되어야 한다.
     
-    ![Alt text](image-7.png)
+    ![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/37e86cb6-2519-4e1d-ba26-63aaddfcdac7)
     
     —> 따라서 논문에서는 sin과 cos 함수를 채택
     
@@ -126,7 +126,7 @@ Multi-head attention을 사용하면 **parallelization**을 통해 계산 성�
 
 ---
 
-![Alt text](image-8.png)
+![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/a83c27dd-b6e6-4a4e-89d6-0bd36d3f4b9a)
 
 Transformer는 영어를 독일어로 바꾸는 task(EN-DE)에선 **기존의 모든 single 모델들과 앙상블 모델들을 outperform**하는 성능을 보여주었다. 또한 영어를 프랑스어로 바꾸는 task(EN-FR)에선 **single 모델들을 outperform**하고 앙상블 모델들과 거의 match하는 결과를 냈다. training cost는 FLOPs로 나타냈는데 여기서도 Transformer는 기존의 모델들과 비교했을 때 상대적으로 **더 적은 cost로 더 좋은 성능**을 내는 걸 알 수 있다
 
