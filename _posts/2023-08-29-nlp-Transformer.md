@@ -34,7 +34,7 @@ tags: [Paper, NLP, Transformer, Attention]
 
 ## 4. Model Architecture
 
-![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/864085ad-4cf8-40e2-9bd6-151db65f97cd) |![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/92f51cbe-aa2e-4b64-bf6d-a1729e6e12ef)
+![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/864085ad-4cf8-40e2-9bd6-151db65f97cd) |![image](https://github.com/SangHyun014/SangHyun014.github.io/assets/87685922/92f51cbe-aa2e-4b64-bf6d-a1729e6e12ef)|
 --- |---|
 
 ### a. Encoder and Decoder Stacks
