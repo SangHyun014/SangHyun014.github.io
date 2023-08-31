@@ -59,3 +59,7 @@ $$
         - **랜덤 샘플링 방식을 통해 근사화**하는 방법 $\to$ 파티클 필터(Particle Filter)
     2. 적분이 가능한 식만 사용(가우시안 분포)
         - 베이즈 필터의 제어값과 센서값의 노이즈가 정규 분포를 따른다고 가정하고, 노이즈의 평균=0, 표준편차 = $\sigma$로 가정한다.$\to$ 칼만 필터(Kalman Filter)
+
+
+### Reference
+https://gaussian37.github.io/autodrive-ose-bayes_filter/
